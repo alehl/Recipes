@@ -29,7 +29,7 @@ class RecipesController < ApplicationController
     if @recipe.update(recipe_params)
       redirect_to @recipe
     else
-      reder 'edit'
+      render 'edit'
     end
   end
 
